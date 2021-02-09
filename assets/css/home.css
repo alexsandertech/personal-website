@@ -1,0 +1,32 @@
+.contentHome{
+    display: flex;
+    flex-direction: column;
+    animation: animationArise 1s;
+}
+    .homePage{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+        #welcome{
+            padding-left: 33px;
+            padding-top: 5px;
+            padding-bottom: 100px;
+        }
+        #welcome span{
+            font-family: 'Arame';
+            font-size: 20px;
+            color: var(--line-color);
+        }
+        #rocketSgv{
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            fill: var(--bg-color);
+            width: 200px;
+        }

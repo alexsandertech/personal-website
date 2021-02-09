@@ -1,0 +1,48 @@
+.contentProjects{
+    display: flex;
+    flex-direction: column;
+    animation: animationArise 1s;
+}
+    .nameDivProj{
+        font-size: 15px;
+        color: var(--color-highlight);
+    }
+    .gridProjects{
+        padding:20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-gap: 20px;
+    }
+        .boxProj{
+            min-width: 280px;
+            max-width: 280px;
+            min-height: 100px;
+            text-align: center;
+            background-color: var(--bg-color-box);
+        }
+        .nameBox{
+            margin: 5px;
+            background-color: var(--bg-color-box);                
+        }
+        .imgBox{                
+            background-color: var(--bg-color-box);
+        }
+        .imgBox img{
+            width: 150px;
+            background-color: var(--bg-color-box);
+            margin: 20px;
+        }
+        .linkBox{                
+            background-color: var(--bg-color-box);
+            margin: 5px;
+        }
+        .linkBox a:hover{
+            color: var(--color-highlight);
+        }
+        .linkBox a{
+            
+            background-color: var(--bg-color-box);
+        }

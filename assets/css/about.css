@@ -1,0 +1,191 @@
+
+.aboutPage {
+    width: 60%;
+}
+
+.contentAbout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: animationArise 1s;
+    overflow-x: none;
+}
+    .personalInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+        .personalInfo a {
+            text-decoration: none;
+            color: var(--font-color);
+            opacity: 70%;
+        }
+            .personalName h2 {
+                font-family: 'Arame';
+            }
+        .itemInf {
+            display: flex;
+            justify-content: center;
+        }
+        #mail-ico, 
+        #cell-ico,
+        #local-ico {
+            fill: var(--font-color);
+            opacity: 70%;
+        }
+            .itemInf a {
+                margin-left: 2px;
+            }
+
+    
+.aboutInf {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .title-boxItem{
+        background-color: var(--bg-color-box);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .title-boxItem h2 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 20px;
+            background-color: var(--bg-color-box);
+        }
+    .description-aboutInf {
+        text-align: center;  
+        background-color: var(--bg-color-box);
+    }
+        .description-aboutInf p {
+            font-size: 15px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 5px;
+            background-color: var(--bg-color-box);
+        }
+   
+.techInf {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color-box);
+    padding-bottom: 20px;
+}
+    .containerTech{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: var(--bg-color-box);
+        justify-content: space-evenly;
+    }
+    .itemTech{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-color-box);
+    }
+    .itemTech p{
+        text-align: center;
+        background-color: transparent;
+    }
+    .imgTech {
+        height: 70px;
+        width: 70px;
+        background-color: var(--bg-color-box);
+    }
+
+       
+
+.btnOtherInfo{
+    background-color: var(--bg-color-box);
+    box-shadow: rgb(0, 0, 0) 0px 1px 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.modalContainer{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0,0,0,.03);
+    
+    backdrop-filter: blur(3px);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-left: 55px;
+}
+    .modalBoxPersonalInfo{
+        position: relative;
+        min-width: 280px;
+        min-height: 350px;
+        border-radius: 15px;
+        background-color: rgba(33,33,46,.01);
+        backdrop-filter: blur(7px);
+        box-shadow: rgb(0, 0, 0) 0px 3px 20px;
+        overflow: hidden;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: animationArise2 1s;
+    }
+    
+        .closeBtnModal{
+            margin: 5px;
+            margin-right: 10px;
+            margin-bottom: 0;
+            font-size: 20px;
+            align-self: flex-end;
+            background-color: transparent;
+            cursor: pointer;
+            backdrop-filter: blur(0);
+        }
+        .modalBoxPersonalInfo img{
+            margin: 10px;
+            max-width: 100px;
+            max-height: 100px;
+            filter:saturate(0);
+            background-color: transparent;
+            backdrop-filter: blur(0);
+        }
+        .namePersonalModal{
+            font-family: 'Arame';
+            background-color: transparent;
+            font-size: 15px;
+            backdrop-filter: blur(0);
+        }
+        .lineBoxModal{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            height: 2px;
+            background-color: var(--font-color);
+            opacity: 60%;
+            backdrop-filter: blur(0);
+        }
+        .infoPersonalModal{
+            width: 100%;
+            margin-top: 5px;
+            padding-left: 25px;
+            font-family: 'Antikor';
+            background-color: transparent;
+            font-size: 13px;
+            backdrop-filter: blur(0);
+        }
+            .infoPersonalModal strong{
+                background-color: transparent;
+                backdrop-filter: blur(0);
+            }
+            
