@@ -1,3 +1,5 @@
+import { createTopBar } from "./base-components/topBar.js"
+
 import { newCardItemTech } from './shared-components/CardItemTech.js'
 import { newCardItemProject } from './shared-components/CardItemProject.js'
 
@@ -8,6 +10,7 @@ function main() {
     newCardItemTech("GIT", "#content", 4);
 }*/
 function main() {
+    createTopBar("#topBar");
 
     newCardItemProject("Campo-Minado",
         "minesweeper",
